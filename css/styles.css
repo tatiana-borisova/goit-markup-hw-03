@@ -63,6 +63,33 @@ img {
   margin-left: auto;
   margin-right: auto;
   /* outline: 2px solid tomato; */
+
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.link {
+  text-decoration: none;
+}
+.title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
 }
 
 /* header */
@@ -71,6 +98,8 @@ img {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ececec;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 /* logo */
@@ -142,31 +171,6 @@ img {
 }
 
 /* body */
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-.link {
-  text-decoration: none;
-}
-.title {
-  color: var(--title-text-color);
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-}
 
 /* buttons */
 
@@ -242,10 +246,6 @@ img {
 
 /* features */
 
-.features {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .features-list {
   display: flex;
 }
@@ -271,8 +271,8 @@ img {
 
 /* work */
 
-.work {
-  padding-bottom: 94px;
+.container.work {
+  padding-top: 0px;
 }
 .work-list {
   display: flex;
@@ -293,11 +293,6 @@ img {
   margin-right: auto;
   background-color: var(--second-bg-color);
 }
-.team {
-  text-align: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .team-list {
   display: flex;
   margin-top: 50px;
@@ -309,6 +304,7 @@ img {
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
   background-color: var(--first-bg-color);
+  text-align: center;
 }
 .team-item:not(:last-child) {
   margin-right: 30px;
@@ -345,10 +341,7 @@ img {
 .portfolio {
   margin-top: 50px;
 }
-.main .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 .portfolio-card-set {
   display: flex;
   flex-wrap: wrap;
