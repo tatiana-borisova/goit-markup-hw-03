@@ -56,6 +56,10 @@ img {
 
 /* utilities*/
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -63,9 +67,6 @@ img {
   margin-left: auto;
   margin-right: auto;
   /* outline: 2px solid tomato; */
-
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .visually-hidden {
   position: absolute;
@@ -283,7 +284,7 @@ img {
 
 /* work */
 
-.container.work {
+.work {
   padding-top: 0px;
 }
 .work-list {
