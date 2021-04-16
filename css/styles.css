@@ -94,6 +94,12 @@ img {
 
 /* header */
 
+.header {
+  background-color: var(--first-bg-color);
+  width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .main-nav {
   display: flex;
   align-items: center;
@@ -172,6 +178,12 @@ img {
 
 /* body */
 
+.main {
+  background-color: var(--first-bg-color);
+  width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+}
 /* buttons */
 
 .banner-button {
