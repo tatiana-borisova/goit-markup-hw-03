@@ -66,7 +66,7 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 .visually-hidden {
   position: absolute;
@@ -97,7 +97,6 @@ img {
 
 .header {
   background-color: var(--first-bg-color);
-  width: 1600px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -181,7 +180,6 @@ img {
 
 .main {
   background-color: var(--first-bg-color);
-  width: 1600px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -242,11 +240,12 @@ img {
 .banner {
   background-color: #2f303a;
   color: white;
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
-  padding: 200px 452px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.banner > .container {
+  max-width: 696px;
 }
 .banner-title {
   display: block;
@@ -301,7 +300,6 @@ img {
 /* team */
 
 .team-section {
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--second-bg-color);
@@ -322,10 +320,14 @@ img {
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
+.team-text {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 30px;
+}
 .team-title {
   color: var(--title-text-color);
   font-weight: 500;
-  margin-top: 30px;
 }
 .team-title,
 .team-description {
@@ -390,38 +392,28 @@ img {
 
 .footer {
   background-color: #2f303a;
-  width: 1600px;
   margin-right: auto;
   margin-left: auto;
-}
-.footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer-nav {
   width: 270px;
 }
 .address {
-  color: white;
-}
-.footer-contacts {
-  color: rgba(255, 255, 255, 0.6);
-}
-.address,
-.footer-contacts {
+  font-style: inherit;
+  margin-top: 20px;
   font-size: 14px;
   line-height: 1.71;
-  font-style: normal;
 }
-.link.address {
-  display: inline-block;
-  margin-top: 20px;
-}
-.link.footer-contacts.mail {
-  display: inline-block;
+
+.footer-item:not(:first-child) {
   margin-top: 9px;
 }
-.link.footer-contacts.tel {
-  display: inline-block;
-  margin-top: 6px;
+.white {
+  color: white;
+}
+.grey {
+  color: rgba(255, 255, 255, 0.6);
 }
