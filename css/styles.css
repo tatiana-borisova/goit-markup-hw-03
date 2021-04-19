@@ -304,6 +304,7 @@ img {
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
   text-align: center;
+  background-color: var(--first-bg-color);
 }
 .team-item:not(:last-child) {
   margin-right: 30px;
